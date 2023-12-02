@@ -322,6 +322,7 @@ button {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-block-start: 278px;
     justify-self: start;
+    letter-spacing: 2px;
   }
 
   .header .description {
