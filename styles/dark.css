@@ -14,13 +14,12 @@
   --text-color: #F1B2CE;
   --text-color-title: #000028;
   --text-color-main-title: #DB00FF;
-  --bg-color: #000028; 
+  --bg-color: #000028;
   --font: "IBM Plex mono";
 }
 
 .theme-dark .page {
   background-image: url(../images/cover-image-dark.png);
-
 }
 
 :root.theme-dark {
@@ -28,7 +27,6 @@
   --text-color: #F1B2CE;
   --text-color-title: #000028;
   --text-color-main-title: #DB00FF;
-  --bg-color: #000028; 
+  --bg-color: #000028;
   --font: "IBM Plex mono";
 }
-
