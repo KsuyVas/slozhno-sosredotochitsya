@@ -6,10 +6,8 @@ html {
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-
-
   background-image: url(../images/cover-image-dark.png);
-  background-color: var(--bg-color)
+  background-color: var(--bg-color);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
