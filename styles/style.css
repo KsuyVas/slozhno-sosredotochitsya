@@ -9,13 +9,13 @@ html {
 
 
   background-image: url(../images/cover-image-dark.png);
+  background-color: var(--bg-color)
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   margin: 0;
   max-width: 1024px;
-
 
 
   /* УБРАТЬ ПОТОМ!!!!!!*/
@@ -26,7 +26,7 @@ html {
 }
 
 header {
-  /* height: 100vh; */
+   height: 100vh;
   display: grid;
   padding: 10px;
   /* а  в относительных???*/
@@ -151,9 +151,9 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
+height: fit-content;
   /* 130% */
-  margin-block-end: 55px;
-  margin-block-start: 0;
+
 }
 
 .title-decor {
@@ -242,13 +242,15 @@ button {
 
 
 .footer {
-  display: flex;
+  display: grid;
   padding: 10px;
   position: relative;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 .footer-text {
+  display: inline-block;
+  height: fit-content;
   color: var(--text-color-main-title);
   text-shadow: 2px 2px 0px #FF0070;
   font-family: IBM Plex Mono;
@@ -256,9 +258,9 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
+  justify-self: center;
+  align-self: center;
   /* 95.7px */
-  margin-block-end: 275px;
-  margin-block-start: 275px;
 }
 
 @media (375px < width <=768px) {
@@ -285,7 +287,7 @@ button {
 
   .header .description {
     max-width: 364px;
-    margin-block-end: 163px;
+   /* margin-block-end: 163px; */
     justify-self: end;
   }
 
@@ -309,10 +311,6 @@ button {
     justify-content: center;
   }
 
-  .footer-text {
-    margin-block-start: 450px;
-    margin-block-end: 440px;
-  }
 }
 
 @media (768px < width <=1024px) {
@@ -320,24 +318,31 @@ button {
 
   .main-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-block-start: 278px;
+  /*  margin-block-start: 142px;*/
     justify-self: start;
     letter-spacing: 2px;
+height: fit-content;
+align-self: start;
+
+
   }
 
   .header .description {
     max-width: 491px;
-    margin-block-start: 114px;
-    margin-block-end: 114px;
+   /*margin-block-start: 114px;
+    margin-block-end: 114px;*/
+
   }
 
   .header {
     padding: 20px;
     gap: 0px;
-  }
+ }
 
   .header__theme-menu {
     justify-self: center;
+height: fit-content;
+margin-block-end: 160px;
   }
 
   .header__theme-menu-list {
@@ -371,7 +376,6 @@ button {
 
   .footer-text {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin: 319px 276px;
   }
 
 }
