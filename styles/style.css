@@ -14,28 +14,19 @@ html {
   background-attachment: fixed;
   margin: 0;
   max-width: 1024px;
-
-
-  /* УБРАТЬ ПОТОМ!!!!!!*/
-  /* max-width: 375px; */
   margin-left: auto;
   margin-right: auto;
 
 }
 
 header {
-   height: 100vh;
+  height: 100vh;
   display: grid;
   padding: 10px;
   /* а  в относительных???*/
   justify-items: end;
   gap: 17px;
   position: relative;
-  /* background-image: url(../images/cover-image-dark.png);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-background-color: var(--bg-color); */
   margin: 0;
 }
 
@@ -149,13 +140,9 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
-height: fit-content;
+  height: fit-content;
   /* 130% */
 }
-
-
-
-
 
 .title-decor {
   background-color: var(--accent-color);
@@ -267,7 +254,7 @@ height: fit-content;
 @media (375px < width <=768px) {
 
   .content {
-    margin-block-start: 60px; 
+    margin-block-start: 60px;
   }
 
   .header {
@@ -281,39 +268,30 @@ height: fit-content;
     justify-self: end;
     height: fit-content;
     align-self: center;
-   
 
-  }
 
-  .header__theme-menu-list {
- 
-    /* margin-block-start: 175px;
-    margin-block-end: 12px; */
   }
 
   .header .description {
     max-width: 364px;
-   /* margin-block-end: 1px; */
-   /* margin-top: 1px;  */
-   position: relative;
-   top: 39px; 
+    position: relative;
+    top: 39px;
     justify-self: end;
     align-self: start;
     margin: 0;
   }
 
-.main-title {
-height: fit-content;
-align-self: center;
-position: relative;
-   bottom: 21px; 
-}
+  .main-title {
+    height: fit-content;
+    align-self: center;
+    position: relative;
+    bottom: 21px;
+  }
 
 
   .why,
   .advices {
     grid-template-columns: 236px 1fr;
-    /* grid-template-columns: 1fr 1fr minmax(300px, 1fr) */
   }
 
   .reasons {
@@ -333,35 +311,28 @@ position: relative;
 }
 
 @media (768px < width <=1024px) {
-
-
   .main-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  /*  margin-block-start: 142px;*/
+    /*  margin-block-start: 142px;*/
     justify-self: start;
     letter-spacing: 2px;
-height: fit-content;
-align-self: start;
-
-
-  }
+    height: fit-content;
+    align-self: start;
+ }
 
   .header .description {
     max-width: 491px;
-   /*margin-block-start: 114px;
-    margin-block-end: 114px;*/
-
   }
 
   .header {
     padding: 20px;
     gap: 0px;
- }
+  }
 
   .header__theme-menu {
     justify-self: center;
-height: fit-content;
-margin-block-end: 160px;
+    height: fit-content;
+    margin-block-end: 160px;
   }
 
   .header__theme-menu-list {
@@ -372,13 +343,11 @@ margin-block-end: 160px;
   .why,
   .advices {
     grid-template-columns: 315px 1fr;
-    /* grid-template-columns: 1fr 1fr minmax(300px, 1fr) */
   }
 
   .why {
     margin-block-start: 60px;
   }
-
 
   .reasons {
     grid-template-columns: repeat(3, 1fr);
@@ -390,8 +359,6 @@ margin-block-end: 160px;
     grid-row-start: 2;
     grid-row-end: 3;
   }
-
-
 
   .footer-text {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -449,6 +416,7 @@ margin-block-end: 160px;
   .advices .tittle-section {
     grid-area: 1 / 1 / 7 / 2
   }
+
   /* СВОЙСТВА ГАЛЕРЕИ*/
 
   .gallery {
@@ -488,24 +456,20 @@ margin-block-end: 160px;
     object-fit: cover;
     height: 100%;
   }
-
 }
 
-
-.header__theme-menu-button:focus, .link:focus {
+.header__theme-menu-button:focus,
+.link:focus {
   outline: none;
 }
-
 
 .header__theme-menu-button:focus-visible {
   border-block-end: 1px solid var(--accent-color);
 }
 
 .link:focus-visible {
-outline: 1px solid var(--text-color);
+  outline: 1px solid var(--text-color);
 }
-
-
 
 .header__theme-menu-button:hover {
   border: 1px solid var(--text-color);
@@ -518,21 +482,13 @@ outline: 1px solid var(--text-color);
 
 .header__theme-button_is-active {
   border: 1px solid var(--accent-color);
-} 
+}
 
 .header__theme-button_is-active:focus {
-outline: none;
+  outline: none;
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
 }
 
-/* .header__them-buttin:disabled {
-  pointer-events: none;
-}
-
-.header__theme-button_is-active {
-  position: relative;
-  font-weight: 700;
-} */
