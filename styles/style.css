@@ -29,7 +29,7 @@ header {
   padding: 10px;
   /* а  в относительных???*/
   justify-items: end;
-  gap: 65px;
+  gap: 17px;
   position: relative;
   /* background-image: url(../images/cover-image-dark.png);
 background-repeat: no-repeat;
@@ -151,8 +151,11 @@ button {
   line-height: 23.4px;
 height: fit-content;
   /* 130% */
-
 }
+
+
+
+
 
 .title-decor {
   background-color: var(--accent-color);
@@ -264,30 +267,48 @@ height: fit-content;
 @media (375px < width <=768px) {
 
   .content {
-    margin-block-start: 60px;
+    margin-block-start: 60px; 
   }
 
   .header {
     justify-items: start;
-    gap: 162px;
+    gap: 0px;
     padding: 20px;
 
   }
 
   .header__theme-menu {
     justify-self: end;
+    height: fit-content;
+    align-self: center;
+   
+
   }
 
   .header__theme-menu-list {
-    margin-block-start: 175px;
-    margin-block-end: 12px;
+ 
+    /* margin-block-start: 175px;
+    margin-block-end: 12px; */
   }
 
   .header .description {
     max-width: 364px;
-   /* margin-block-end: 163px; */
+   /* margin-block-end: 1px; */
+   /* margin-top: 1px;  */
+   position: relative;
+   top: 39px; 
     justify-self: end;
+    align-self: start;
+    margin: 0;
   }
+
+.main-title {
+height: fit-content;
+align-self: center;
+position: relative;
+   bottom: 21px; 
+}
+
 
   .why,
   .advices {
@@ -495,12 +516,16 @@ outline: 1px solid var(--text-color);
 }
 
 
-/* .header__theme-button_is-active {
+.header__theme-button_is-active {
   border: 1px solid var(--accent-color);
-} */
+} 
 
 .header__theme-button_is-active:focus {
 outline: none;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
 }
 
 /* .header__them-buttin:disabled {
