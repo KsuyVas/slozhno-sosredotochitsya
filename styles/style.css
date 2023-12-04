@@ -32,7 +32,7 @@ header {
 .decor {
   color: var(--accent-color);
   text-align: center;
-  font-family: IBM Plex Mono;
+  font-family: var(--font), sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -163,7 +163,7 @@ button {
 
 .tittle-section {
   color: var(--text-color-title-section);
-  font-family: IBM Plex Mono;
+  font-family: var(--font), sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -175,10 +175,10 @@ button {
 
 .tittle-cards {
   color: var(--text-color-title);
-  font-family: IBM Plex Mono;
+  font-family: var(--font), sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 23.4px;
   /* 130% */
   margin-block-end: 10px;
@@ -187,7 +187,7 @@ button {
 
 .text-cards {
   color: var(--text-color);
-  font-family: IBM Plex Mono;
+  font-family: var(--font), sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -238,7 +238,7 @@ button {
   height: fit-content;
   color: var(--text-color-main-title);
   text-shadow: 2px 2px 0px #FF0070;
-  font-family: IBM Plex Mono;
+  font-family: var(--font), sans-serif;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   font-weight: 700;
@@ -469,7 +469,7 @@ button {
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--text-color);
+  border: 1px solid rgba(255, 0, 112, 0.40);
 }
 
 .link:hover {
@@ -487,5 +487,6 @@ button {
 
 .header__theme-menu-button_active {
   pointer-events: none;
+  outline: 1px solid var(--accent-color);
 }
 
