@@ -266,8 +266,10 @@ button {
     justify-self: end;
     height: fit-content;
     align-self: center;
+  }
 
-
+  .header__theme-menu-list {
+    margin-block-start: 74px;
   }
 
   .header .description {
@@ -284,6 +286,7 @@ button {
     align-self: center;
     position: relative;
     bottom: 21px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
 
@@ -308,12 +311,11 @@ button {
 
 }
 
-@media (1024px <=width) {
+@media (1024px <= width) {
   .main-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     /*  margin-block-start: 142px;*/
     justify-self: start;
-    letter-spacing: 2px;
     height: fit-content;
     align-self: start;
   }
