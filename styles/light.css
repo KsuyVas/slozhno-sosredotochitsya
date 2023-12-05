@@ -16,10 +16,6 @@
   --text-color-title: #353430;
   --bg-color: #FFF1F7;
   --text-color-title-section: #353430;
-
-  .header__theme-menu-button {
-    color: #353430;
-  }
 }
 
 .page.theme_light .decor {
