@@ -23,18 +23,6 @@
   background-image: url(../images/cover-image-dark.png);
 }
 
-
-:root.theme-dark {
-  --accent-color: #ff0070;
-  --text-color: #F1B2CE;
-  --text-color-title: #000028;
-  --text-color-main-title: #DB00FF;
-  --bg-color: #000028;
-  --text-color-title-section: #FF0070;
-  --font: "IBM Plex mono";
-}
-
-
 .page.theme_dark .decorated-zone::before {
   border-block-start: 1px solid var(--accent-color);
   border-inline-end: 1px solid var(--accent-color);

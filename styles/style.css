@@ -1,9 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-html {
-  font-size: 15.5px;
-}
-
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: url(../images/cover-image-dark.png);
@@ -13,7 +9,7 @@ html {
   background-position: center;
   background-attachment: fixed;
   margin: 0;
-  max-width: 1024px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -42,6 +38,7 @@ header {
   position: absolute;
   inset-inline-end: 38px;
   inset-block-start: 11px;
+  text-transform: uppercase;
 }
 
 .decor::after {
@@ -145,6 +142,10 @@ button {
   background-color: var(--accent-color);
 }
 
+.header .description {
+  max-width: 364px;
+}
+
 .content {
   padding-inline-start: 10px;
   /* а  в относительных???*/
@@ -197,7 +198,7 @@ button {
 }
 
 .link {
-  text-shadow: 2px 2px 0px var(--accent-color);
+  text-shadow: 2px 0px 0px var(--accent-color);
   text-decoration: none;
 }
 
@@ -248,7 +249,7 @@ button {
   /* 95.7px */
 }
 
-@media (375px < width <=768px) {
+@media (768px <=width < 1023px) {
 
   .content {
     margin-block-start: 60px;
@@ -307,7 +308,7 @@ button {
 
 }
 
-@media (768px < width <=1024px) {
+@media (1024px <=width) {
   .main-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     /*  margin-block-start: 142px;*/
@@ -315,7 +316,7 @@ button {
     letter-spacing: 2px;
     height: fit-content;
     align-self: start;
- }
+  }
 
   .header .description {
     max-width: 491px;
@@ -363,14 +364,12 @@ button {
 
 }
 
-@media (375px < width <=1024px) {
-
+@media (767px < width) {
 
   .decor {
     inset-inline-end: 50px;
     inset-block-start: 21px;
   }
-
 
   .decorated-zone::before {
     inset-inline-end: 20px;
@@ -476,17 +475,15 @@ button {
   border-block-end: 1px solid var(--text-color);
 }
 
-
 .header__theme-button_is-active {
   border: 1px solid var(--accent-color);
 }
 
 .header__theme-button_is-active:focus {
   outline: 1px solid var(--accent-color);
-} 
+}
 
 .header__theme-menu-button_active {
   pointer-events: none;
   outline: 1px solid var(--accent-color);
 }
-
