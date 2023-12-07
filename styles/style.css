@@ -81,6 +81,7 @@ button {
   background-color: transparent;
   border: none;
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 .header__theme-menu-list {
@@ -179,7 +180,7 @@ button {
   font-family: var(--font), sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 23.4px;
   /* 130% */
   margin-block-end: 10px;
@@ -200,6 +201,10 @@ button {
 .link {
   text-shadow: 2px 0px 0px var(--accent-color);
   text-decoration: none;
+}
+
+.advices .tittle-cards {
+font-weight: 400;
 }
 
 .advices .description,
@@ -355,7 +360,7 @@ button {
   }
 
   .reasons .card {
-    max-width: 315px;
+    /* max-width: 315px; */
     grid-row-start: 2;
     grid-row-end: 3;
   }
@@ -488,4 +493,19 @@ button {
 .header__theme-menu-button_active {
   pointer-events: none;
   outline: 1px solid var(--accent-color);
+}
+
+/* @media (1024px < width <= 1440px) {
+  .reasons .card {
+    max-width: 427px;
+  }
+} */
+
+
+@media (width <=767px) {
+.header .description {
+  position: relative;
+  inset-block-start: -7px;
+  }
+
 }
